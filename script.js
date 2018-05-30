@@ -17,10 +17,10 @@ console.log(`${multiply(a, b)}`)
 //task3
 
 let val = 0;
-let length = 0;
+
 const average = (...args) => {
-    args.forEach(arg => val = val + arg); 
-    return val = val / args.length
+    val = args.reduce((x, y) => x + y) / args.length;
+    return val;
 };
 
 average(1,2,3,4,5);
@@ -34,6 +34,6 @@ console.log(average(...grades));
 //task5
 
 const data = [1, 4, 'Iwona', false, 'Nowak'];
-const [firstnumber, secnumber, firstname, student, lastname] = data;
+const [ , , firstname, , lastname] = data;
 
 console.log(firstname, lastname);
