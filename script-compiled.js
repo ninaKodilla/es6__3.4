@@ -16,15 +16,10 @@ console.log(`${multiply(a, b)}`);
 
 //task3
 
-let val = 0;
-let length = 0;
-const average = (...args) => {
-    args.forEach(arg => val = val + arg);
-    return val = val / args.length;
-};
+
+const average = (...args) => args.reduce((x, y) => x + y) / args.length;
 
 average(1, 2, 3, 4, 5);
-console.log(`${val}`);
 
 //task4
 
@@ -34,6 +29,16 @@ console.log(average(...grades));
 //task5
 
 const data = [1, 4, 'Iwona', false, 'Nowak'];
-const [firstnumber, secnumber, firstname, student, lastname] = data;
+const [,, firstname,, lastname] = data;
 
 console.log(firstname, lastname);
+
+//task6 -caps
+
+const names = ["Ania", "Krzyś", "Tomka", "Madzia", "Nina", "Julka", "Mateusz", "Jakuba"];
+const teacherCaps = 237;
+
+const sum = (...names) => {
+    names.map(x => 5);
+    names.reduce((x, y) => x + y, teacherCaps);
+};

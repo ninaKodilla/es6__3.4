@@ -39,9 +39,7 @@ console.log(firstname, lastname);
 const names = ["Ania", "Krzyś", "Tomka", "Madzia", "Nina", "Julka", "Mateusz", "Jakuba"];
 const teacherCaps = 237;
 
-function caps() {
-    return names
-        .map(x => 5)
-        .reduce((x,y) => x + y) + teacherCaps;
+const sum = (...names) => {
+    names.map(x => 5)
+    names.reduce((x,y) => x + y , teacherCaps)
 }
-console.log(caps())
